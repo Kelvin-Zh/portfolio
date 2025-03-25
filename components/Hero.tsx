@@ -2,6 +2,8 @@ import React from 'react'
 import { Spotlight } from './ui/spotlight'
 import { cn } from "@/lib/utils"
 import { TextGenerateEffect } from './ui/text-generate-effect'
+import MagicButton from './ui/MagicButton'
+import { SlArrowDownCircle } from 'react-icons/sl'
 
 const Hero = () => {
   return (
@@ -41,8 +43,15 @@ const Hero = () => {
                 words="Recently Graduated Software Developer from the Atlanta Area"/>
 
                 <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                    Hey! I'm Kelvin!
+                    Hey, I'm Kelvin Zhang!
                 </p>
+
+                { /* Button */ }
+                <a href="#about">
+                    <MagicButton 
+                          title='Download my Resume'
+                          icon={<SlArrowDownCircle />} position={'right'}/>
+                </a>
             </div>
         </div>
 
