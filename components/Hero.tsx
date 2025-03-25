@@ -1,6 +1,7 @@
 import React from 'react'
 import { Spotlight } from './ui/spotlight'
 import { cn } from "@/lib/utils"
+import { TextGenerateEffect } from './ui/text-generate-effect'
 
 const Hero = () => {
   return (
@@ -28,11 +29,20 @@ const Hero = () => {
             </p>
         </div>
 
+        { /* Text in the grid (introduction) */ }
         <div className="flex justify-center relative my-20 z-10">
             <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
                 <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-                    Testing statement
+                    Wannabe Fullstack Engineer
                 </h2>
+
+                <TextGenerateEffect 
+                className="text-center text-[40]px md:text-5xl lg:text-6xl" 
+                words="Recently Graduated Software Developer from the Atlanta Area"/>
+
+                <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+                    Hey! I'm Kelvin!
+                </p>
             </div>
         </div>
 
