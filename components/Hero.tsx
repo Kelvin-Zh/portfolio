@@ -39,17 +39,17 @@ const Hero = () => {
                 </h2>
 
                 <TextGenerateEffect 
-                className="text-center text-[40]px md:text-5xl lg:text-6xl" 
-                words="Recently Graduated Software Developer from the Atlanta Area"/>
+                className="text-center text-[50]px md:text-10xl lg:text-7xl" 
+                words="New Software Developer from Atlanta"/>
 
-                <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                    Hey, I'm Kelvin Zhang!
+                <p className="text-center md:tracking-wider mb-4 text-l md:text-lg lg:text-2xl">
+                    Hi, I'm <span className="font-bold">Kelvin Zhang</span>!
                 </p>
 
                 { /* Button */ }
                 <a href="#about">
                     <MagicButton 
-                          title='Download my Resume'
+                          title='My Resume'
                           icon={<SlArrowDownCircle />} position={'right'}/>
                 </a>
             </div>
