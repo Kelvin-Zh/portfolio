@@ -9,16 +9,16 @@ export const gridItems = [
     {  
         id: 1,
         title: "About Me",
-        description: "I am a software developer that enjoys creating and building different things that people would use. I strive to expand and hone my skills to whatever opportunity that is presented to me, and to continue to grow as a person.\n\n Currently, I am trying to become a fullstack developer, as I love being able to do everything from the front end to the back end.",
+        description: "I am a software developer that enjoys creating and building different things that people would use. I strive to expand and hone my skills to whatever opportunity that is presented to me, and to continue to grow as a person.\n\n Currently, I am trying to become a fullstack developer, as I love being able to do everything from the front end to the back end. \n\nLinkedIn: https://www.linkedin.com/in/kelvin-zh/",
         //header: <Skeleton />,
         className: "md:col-span-2",
     },
     {
         id: 2,
-        title: "Me!",
-        description: "Here's what I look like!",
+        //title: "Me!",
+        //description: "Here's what I look like!",
         //header: <Skeleton />,
-        className: "md:col-span-1",
+        lassName: "md:col-span-1",
         img: "/linkedinPhoto.jpeg",
     },
     {
