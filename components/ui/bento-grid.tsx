@@ -29,6 +29,7 @@ export const BentoGridItem = ({
   header,
   icon,
   id,
+  img,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -36,6 +37,7 @@ export const BentoGridItem = ({
   header?: React.ReactNode;
   icon?: React.ReactNode;
   id?: number;
+  img?: string;
 }) => {
   return (
     <div
@@ -60,6 +62,13 @@ export const BentoGridItem = ({
                 </React.Fragment>
               ))
             : description}
+        </div>
+        <div>
+          { /* img */ }
+          { img && (<img 
+          className="w-full h-55 object-cover rounded-lg border-0"
+          src = {img}/>
+        )}
         </div>
       </div>
     </div>

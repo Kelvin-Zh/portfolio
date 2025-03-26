@@ -16,9 +16,10 @@ export const gridItems = [
     {
         id: 2,
         title: "Me!",
-        description: "",
+        description: "Here's what I look like!",
         //header: <Skeleton />,
         className: "md:col-span-1",
+        img: "/linkedinPhoto.jpeg",
     },
     {
         id: 3,
