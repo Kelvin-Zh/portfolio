@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/floating-navbar";
@@ -13,6 +14,8 @@ export default function Home() {
         <FloatingNav navItems={[ {name: 'Home', link: '/', icon: <FaHome />} ]}/>
         <Hero />
         <Grid />
+
+        <Footer />
       </div>
     </main>
   );

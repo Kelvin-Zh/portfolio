@@ -37,3 +37,16 @@ export const gridItems = [
         className: "md:col-span-2",
     },
   ];
+
+  export const socialMedia = [
+    {
+        id: 1,
+        img: "/link.svg",
+        link: "https://www.linkedin.com/in/kelvin-zh/",
+    },
+    {
+        id: 2,
+        img: "/git.svg",
+        link: "https://github.com/Kelvin-Zh",
+    },
+  ];
