@@ -64,7 +64,7 @@ export const BentoGridItem = ({
         </div>
 
         {/* Description div */}
-        <div className="adaptive font-sans text-l font-inter text-neutral-600 dark:text-neutral-300">
+        <div className="adaptive font-sans text-l font-inter text-neutral-600 dark:text-neutral-300 overflow-hidden text-ellipsis">
           {typeof description === "string" ? (
             description.split("\n").map((line, index) => (
               <React.Fragment key={index}>
@@ -97,7 +97,7 @@ export const BentoGridItem = ({
         <div>
           { /* img */ }
           { img && (<img 
-          className="w-full h-69 object-cover rounded-lg border-0"
+          className="w-full h-60 object-cover rounded-lg border-0"
           src = {img}/>
         )}
         </div>

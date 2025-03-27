@@ -23,16 +23,16 @@ export const gridItems = [
     },
     {
         id: 3,
-        title: "Ever Growing Tech Stack",
-        description: "Frontend: JavaScript, Typescript, React, Next.JS, Tailwind CSS, Framer Motion\n\nBackend: Node.JS, .NET (Learning) \n\nDatabase: MySQL, MongoDB, PlanetScale \n\nTools: Git, Docker, AWS",
+        title: "The Power of Communication",
+        description:
+            "Understand the impact of effective communication in our lives.",
         //header: <Skeleton />,
         className: "md:col-span-1",
     },
     {
         id: 4,
-        title: "The Power of Communication",
-        description:
-            "Understand the impact of effective communication in our lives.",
+        title: "Ever Growing Tech Stack",
+        description: "Frontend: JavaScript, Typescript, React, Next.JS, Tailwind CSS, Framer Motion\n\nBackend: Node.JS, .NET (Learning) \n\nDatabase: MySQL, MongoDB, PlanetScale \n\nTools: Git, Docker, AWS",
         //header: <Skeleton />,
         className: "md:col-span-2",
     },
