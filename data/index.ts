@@ -32,7 +32,7 @@ export const gridItems = [
     {
         id: 4,
         title: "Ever Growing Tech Stack",
-        description: "Frontend: JavaScript, Typescript, React, Next.JS, Tailwind CSS, Framer Motion\n\nBackend: Node.JS, .NET (Learning) \n\nDatabase: MySQL, MongoDB, PlanetScale \n\nTools: Git, Docker, AWS",
+        description: "Programming Languages: C, Java, JavaScript, C#, Python \n\nDatabase: MongoDB, MySQL, PlanetScale \n\nFrameworks and Libraries: React.js, Next.js, Tailwind CSS, Flask \n\nTools and Platforms: AWS, Docker, Git, Github, Google Cloud, Hadoop",
         //header: <Skeleton />,
         className: "md:col-span-2",
     },
