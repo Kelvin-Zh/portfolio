@@ -9,7 +9,7 @@ export const gridItems = [
     {  
         id: 1,
         title: "About Me",
-        description: "I am a software developer that enjoys creating and building different things that people would use. I strive to expand and hone my skills to whatever opportunity that is presented to me, and to continue to grow as a person.\n\n Currently, I am trying to become a fullstack developer, as I love being able to do everything from the front end to the back end. \n\nLinkedIn: https://www.linkedin.com/in/kelvin-zh/",
+        description: "I am a software developer that enjoys creating and building different things that people would use. I strive to expand and hone my skills to whatever opportunity that is presented to me, and to continue to grow as a person. Currently, I am trying to become a fullstack developer, as I love being able to do everything from the front end to the back end. \n\n I graduated from the University of Georgia with a bachelors in Computer Science and a minor in Mathematics. Besides programming, I enjoy playing video games, volleyball, and continuing the gym grind.",
         //header: <Skeleton />,
         className: "md:col-span-2",
     },
@@ -18,16 +18,13 @@ export const gridItems = [
         //title: "Me!",
         //description: "Here's what I look like!",
         //header: <Skeleton />,
-        lassName: "md:col-span-1",
+        className: "md:col-span-1",
         img: "/linkedinPhoto.jpeg",
     },
     {
         id: 3,
-        title: "The Power of Communication",
-        description:
-            "Understand the impact of effective communication in our lives.",
-        //header: <Skeleton />,
         className: "md:col-span-1",
+        img: "/sora.jpg",
     },
     {
         id: 4,
