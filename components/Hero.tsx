@@ -9,9 +9,9 @@ const Hero = () => {
   return (
     <div className="pb-20 pt-36 relative overflow-hidden">
         <div>
-            <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen scale-x-[-1]" fill="white" />
+            <Spotlight className="-top-45 -left-10 md:-left-32 md:-top-20 h-screen scale-x-[-1]" fill="white" />
             <Spotlight className="top-10 left-40 h-[80vh] w-[50vw] scale-x-[-1]" fill="blue" />
-            <Spotlight className="top-28 left-80 h-[80vh] w-[50vw] scale-x-[-1]" fill="purple" />
+            <Spotlight className="top-20 left-80 h-[80vh] w-[50vw] scale-x-[-1]" fill="purple" />
         </div>
         
         { /* Introduction */ }
