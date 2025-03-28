@@ -9,7 +9,7 @@ export const gridItems = [
     {  
         id: 1,
         title: "About Me",
-        description: "I am a software developer that enjoys creating and building different things that people would use. I strive to expand and hone my skills to whatever opportunity that is presented to me, and to continue to grow as a person. Currently, I am trying to become a fullstack developer, as I love being able to do everything from the front end to the back end. \n\n I graduated from the University of Georgia with a bachelors in Computer Science and a minor in Mathematics. Besides programming, I enjoy playing video games, volleyball, and hanging out with my dog, Sora!",
+        description: "I am a software developer that enjoys creating and building different things that people would use. I strive to expand and hone my skills to whatever opportunity that is presented to me, and to continue to grow as a person. Currently, I am trying to become a fullstack developer. \n\n I graduated from the University of Georgia with a bachelors in Computer Science and a minor in Mathematics. Besides programming, I enjoy playing video games, volleyball, guitar, and hanging out with my dog, Sora!",
         //header: <Skeleton />,
         className: "md:col-span-2",
     },
@@ -65,4 +65,19 @@ export const gridItems = [
         name: "Contact",
         link: "/contact",
     }
+  ];
+
+  export const projects = [
+    {
+        title: ""
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
   ];

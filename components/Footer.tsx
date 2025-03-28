@@ -12,7 +12,7 @@ const Footer = () => {
             <h1 className="heading lg:max-w-[45vw] xs:text-l sm:text-xl md:text-3xl lg:text-5xl pb-5">
                 Feel free to reach out!
             </h1>
-            <a href="mailto:zkelvin000@gmail.com">
+            <a href="mailto:zkelvin999@gmail.com">
                 <MagicButton 
                     title = "Email Me" 
                     position = "right" 
