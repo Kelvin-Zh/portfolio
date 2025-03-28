@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
 
         {/* Copy Right & Social Media */}
-        <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+        <div className="flex mt-16 md:flex-row flex-col justify-between items-center pl-6 pr-6">
             <p className="md:text-base text-sm md:font-normal font-light">
                 Copyright © 2025 Kelvin Zhang
             </p>
