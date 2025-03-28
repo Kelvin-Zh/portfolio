@@ -67,9 +67,12 @@ export const gridItems = [
     }
   ];
 
-  export const projects = [
+  export const recentProjects = [
     {
-        title: ""
+        title: "",
+        description: "",
+        img: "",
+        stack: [],
     },
     {
 

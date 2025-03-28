@@ -1,5 +1,6 @@
 import React from 'react'
 import { WobbleCard } from './ui/wobble-card'
+import { recentProjects } from '@/data'
 
 const RecentProjects = () => {
   return (
@@ -10,10 +11,18 @@ const RecentProjects = () => {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center w-full">
-            <WobbleCard containerClassName="col-span-4 lg:col-span-3 w-full max-w-md bg-purple-600 dark:bg-purple">
-                <p>Your content here</p>
-            </WobbleCard>
+            {recentProjects.map((project, index) => (
+                <WobbleCard key={index} containerClassName="bg-purple-600 dark:bg-purple p-6 rounded-lg shadow-lg">
+                    <img src={project.img} alt={project.title} className="w-full h-40 object-cover rounded-md mb-4" />
+                    <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                    <p className="text-neutral-200">{project.description}</p>
+                    <p className="mt-2 text-sm text-white opacity-80">
+                        <strong>Stack:</strong> {project.stack}
+                    </p>
+                </WobbleCard>
+            ))}
         </div>
+
 
     </div>
   )
