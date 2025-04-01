@@ -69,18 +69,31 @@ export const gridItems = [
 
   export const recentProjects = [
     {
-        title: "",
+        id: 1,
+        title: "Discord Bot",
+        description: "A personal project that uses RiotGames API to pull recent League of Legends match data from a player's RiotID and display it on Discord. The bot is hosted on AWS Lambda and is triggered by a Discord command, utilizing the cost effectiveness of serverless computing.",
+        img: "",
+        subtitle: "Python, Flask, Docker, AWS Lambda, Discord API",
+    },
+    {
+        id: 2,
+        title: "UGAHacks 8 - TappedIn",
+        description: "A full stack mobile app that ",
+        img: "",
+        subtitle: "React-native, Node.js, MongoDB, ExpoGo, Axios",
+    },
+    {
+        id: 3,
+        title: "Project 3",
         description: "",
         img: "",
-        stack: [],
+        subtitle: "",
     },
     {
-
-    },
-    {
-
-    },
-    {
-
+        id: 4,
+        title: "Project 4",
+        description: "",
+        img: "",
+        subtitle: "",
     },
   ];
