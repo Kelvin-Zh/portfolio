@@ -5,7 +5,7 @@ import { socialMedia } from '@/data'
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="footer">
+    <footer className="w-full pt-20 pb-10" id="contact">
     
         { /* Contact */ }
         <div className="flex flex-col items-center">
