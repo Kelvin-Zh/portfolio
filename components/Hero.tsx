@@ -30,7 +30,7 @@ const Hero = () => {
                 </p>
 
                 { /* Button */ }
-                <a href="#about">
+                <a href="/Resume-KZ.pdf" download>
                     <MagicButton 
                           title='My Resume'
                           icon={<SlArrowDownCircle />} position={'right'}/>
