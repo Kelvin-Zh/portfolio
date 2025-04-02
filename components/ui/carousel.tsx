@@ -163,4 +163,3 @@ export default function Carousel({ slides }: CarouselProps) {
     </div>
   )
 }
-
