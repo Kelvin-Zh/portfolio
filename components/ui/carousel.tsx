@@ -77,14 +77,14 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
         }}
       >
         <div
-          className="absolute top-[10%] left-[10%] w-[80%] h-[80%] bg-gradient-to-br from-[#1D1F2F] to-[#2D2F3F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out border border-white/20 shadow-lg"
+          className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#1D1F2F] to-[#2D2F3F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
           style={{
             transform: current === index ? "translate3d(calc(var(--x) / 30), calc(var(--y) / 30), 0)" : "none",
           }}
         />
 
         <article
-          className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out flex flex-col items-center justify-center h-full ${
+          className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out ${
             current === index ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
