@@ -1,7 +1,6 @@
 "use client"
 import { IconArrowNarrowRight } from "@tabler/icons-react"
 import type React from "react"
-
 import { useState, useRef, useId, useEffect } from "react"
 
 interface SlideData {
@@ -123,6 +122,8 @@ interface CarouselProps {
 
 export default function Carousel({ slides }: CarouselProps) {
   const [current, setCurrent] = useState(0)
+  const [startTouch, setStartTouch] = useState(0)
+  const [endTouch, setEndTouch] = useState(0)
 
   const handlePreviousClick = () => {
     const previous = current - 1
@@ -140,10 +141,35 @@ export default function Carousel({ slides }: CarouselProps) {
     }
   }
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    const touchStart = e.touches[0].clientX
+    setStartTouch(touchStart)
+  }
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    const touchMove = e.touches[0].clientX
+    setEndTouch(touchMove)
+  }
+
+  const handleTouchEnd = () => {
+    const swipeDistance = startTouch - endTouch
+    if (swipeDistance > 50) {
+      handleNextClick()
+    } else if (swipeDistance < -50) {
+      handlePreviousClick()
+    }
+  }
+
   const id = useId()
 
   return (
-    <div className="relative w-[70vmin] h-[70vmin] mx-auto" aria-labelledby={`carousel-heading-${id}`}>
+    <div
+      className="relative w-[70vmin] h-[70vmin] mx-auto"
+      aria-labelledby={`carousel-heading-${id}`}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       <ul
         className="absolute flex mx-[-4vmin] transition-transform duration-1000 ease-in-out"
         style={{
