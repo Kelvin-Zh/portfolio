@@ -1,5 +1,4 @@
 import React from 'react'
-import { WobbleCard } from './ui/wobble-card'
 import { recentProjects } from '@/data'
 import Carousel from './ui/carousel' // Adjust the path based on the actual location of the Carousel component
 

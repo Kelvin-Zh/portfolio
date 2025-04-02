@@ -8,7 +8,6 @@ const Grid = () => {
         <BentoGrid className=/*"max-w-4x1 mx-auto md:auto-rows-[20rem]"*/"w-full py-30">
             {gridItems.map ((item) => 
                 (<BentoGridItem 
-                    id = {item.id}
                     key = {item.id}
                     title = {item.title}
                     description = {item.description}

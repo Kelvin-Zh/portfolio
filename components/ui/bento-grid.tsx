@@ -1,8 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
-import { Inter } from "next/font/google";
 import { FaLinkedin } from "react-icons/fa";
-
+import Image from "next/image"; // Importing Image from next/image
 
 export const BentoGrid = ({
   className,
@@ -29,7 +28,6 @@ export const BentoGridItem = ({
   description,
   header,
   icon,
-  id,
   img,
 }: {
   className?: string;
@@ -37,10 +35,8 @@ export const BentoGridItem = ({
   description?: string | React.ReactNode;
   header?: React.ReactNode;
   icon?: React.ReactNode;
-  id?: number;
   img?: string;
 }) => {
-
   return (
     <div
       className={cn(
@@ -48,9 +44,6 @@ export const BentoGridItem = ({
         className,
       )}
       style={{
-        //   add these two
-        //   you can generate the color from here https://cssgradient.io/
-        background: "rgb(0,0,0)",
         backgroundColor: "linear-gradient(90deg, rgba(45,20,83,1) 35%, rgba(47,75,121,1) 54%)",
       }}
     >
@@ -72,7 +65,7 @@ export const BentoGridItem = ({
                   <div className="flex items-center gap-2">
                     <FaLinkedin className="text-blue-600 text-lg" />
                     <a
-                      href={line.replace("LinkedIn: ", "")} // Removes "LinkedIn: " from the text
+                      href={line.replace("LinkedIn: ", "")}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-500 hover:underline"
@@ -91,22 +84,19 @@ export const BentoGridItem = ({
           )}
         </div>
 
-
-
-        {/* img div */}
+        {/* Image div */}
         <div>
-          { /* img */ }
-          { img && (<img 
-          className="w-full h-60 object-cover rounded-lg border-0"
-          src = {img}/>
-        )}
+          {img && (
+            <Image
+              className="w-full h-60 object-cover rounded-lg border-0"
+              src={img}
+              alt="Bento Grid Image" // Added alt text
+              width={600} // Specify width
+              height={240} // Specify height
+            />
+          )}
         </div>
-
-        
-          
       </div>
     </div>
   );
 };
-
-const inter = Inter({ subsets: ["latin"] });

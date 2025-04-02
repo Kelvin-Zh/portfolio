@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import Link, { LinkProps } from "next/link"; // Import LinkProps from next/link
 import Image from "next/image";
 
 const transition = {
@@ -109,7 +109,11 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+// Fix: Specify the type for `rest` using `LinkProps` from `next/link`
+export const HoveredLink = ({
+  children,
+  ...rest
+}: LinkProps & { children: React.ReactNode }) => {
   return (
     <Link
       {...rest}

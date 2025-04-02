@@ -1,6 +1,5 @@
 import React from 'react'
 import { Spotlight } from './ui/spotlight'
-import { cn } from "@/lib/utils"
 import { TextGenerateEffect } from './ui/text-generate-effect'
 import MagicButton from './ui/MagicButton'
 import { SlArrowDownCircle } from 'react-icons/sl'
@@ -26,19 +25,18 @@ const Hero = () => {
                 words="New Software Developer from Atlanta"/>
 
                 <p className="text-center md:tracking-wider mb-4 text-l md:text-lg lg:text-2xl">
-                    Hi, I'm <span className="font-bold">Kelvin Zhang</span>!
+                    Hi, I&apos;m <span className="font-bold">Kelvin Zhang</span>!
                 </p>
 
                 { /* Button */ }
                 <a href="/Resume-KZ.pdf" download>
                     <MagicButton 
-                          title='My Resume'
-                          icon={<SlArrowDownCircle />} position={'right'}/>
+                          title="My Resume"
+                          icon={<SlArrowDownCircle />} 
+                          position="right" />
                 </a>
             </div>
         </div>
-
-        
     </div>
   )
 }
